@@ -1,3 +1,6 @@
+!pip install requests
+!pip install gradio
+
 import requests
 pip install gradio
 import gradio as gr
@@ -29,4 +32,5 @@ def chat(user_input):
     return ask_ollama(prompt)
 
 iface = gr.Interface(fn=chat, inputs="text", outputs="text", title="E-Commerce Chatbot")
+
 iface.launch()
