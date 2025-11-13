@@ -1,3 +1,6 @@
+!pip install requests
+!pip install gradio
+
 import requests, json
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -35,3 +38,4 @@ def recommend():
         print("Bot:", ask_ollama(prefix + q), "\n")
 
 recommend()
+
