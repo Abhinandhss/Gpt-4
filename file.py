@@ -1,3 +1,8 @@
+!pip install requests
+!pip install gradio
+!pip install PyPDF2
+!pip install python-docx
+
 import requests, gradio as gr
 from PyPDF2 import PdfReader
 from docx import Document
@@ -37,3 +42,4 @@ iface = gr.Interface(
     title="File Q&A"
 )
 iface.launch()
+
